@@ -1,0 +1,5 @@
+<div class="favorites">
+    <div *ngFor="let day of favorites " (click)="navigateHome(day.cityeName)">
+        <app-todey-weather [cityeName]="day.cityeName" [today]="day" [WeatherText]="true"></app-todey-weather>
+    </div>
+</div>

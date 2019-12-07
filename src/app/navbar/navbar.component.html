@@ -1,0 +1,18 @@
+<div class="navbar">
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <span>Weather app</span>
+      <span class="example-spacer"></span>
+      <div class="component-navigation">
+        <span  matTooltip="Dark Theme ">
+          <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">
+          </mat-slide-toggle>
+        </span>
+        <span routerLink="home">Home</span>
+        <span routerLink="favorites">Favorites</span>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>

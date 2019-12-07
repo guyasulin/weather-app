@@ -1,0 +1,13 @@
+<div class="today-weather">
+    <div class="currentWeather">
+        <div>{{ cityeName }}</div>
+        <div>
+            {{today?.Temperature.Metric.Value}}
+                <span  *ngIf="showTemperatureC">{{today?.Temperature.Metric.Unit  }} &ordm;</span>
+                <span  *ngIf="showTemperatureF">{{today?.Temperature.Imperial.Unit}} &ordm;</span>
+        </div>
+        <div *ngIf="WeatherText">
+            {{today?.WeatherText}}
+        </div>
+    </div>
+</div>

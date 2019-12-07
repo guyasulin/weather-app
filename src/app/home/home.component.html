@@ -1,0 +1,16 @@
+<div class="home">
+  <div class="search-bar">
+    <form class="example-form ">
+      <div class="search">
+        <input type="text" class="searchPut" matInput name="cityName" [(ngModel)]="cityName" [formControl]="stateCtrl"
+          [matAutocomplete]="auto" (ngModelChange)="searchCity()" />
+        <mat-autocomplete #auto="matAutocomplete" (optionSelected)="getOption($event)">
+          <mat-option *ngFor="let cityName of cityNames" [value]="cityName">
+            {{ cityName.LocalizedName	}}
+          </mat-option>
+        </mat-autocomplete>
+      </div>
+    </form>
+  </div>
+  <app-weather-details  [cityeName]="selectedCityName" [cityNameKey]="cityNameKey"></app-weather-details>
+</div>

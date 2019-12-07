@@ -1,0 +1,26 @@
+<div class="weather-details">
+    <div class="container">
+        <div class="header">
+            <app-todey-weather #todeyWeather [cityeName]="cityeName" [today]="currentWeather"></app-todey-weather>
+
+
+            <button [ngStyle]="{'color': this.favoritesService.selectedCity == false ? '#28CA96' : '#FC6074'}"
+            type="button" class="btn-saveOrDelete" (click)="saveOrDelete()">Save/remove</button>
+
+            <div class="toggle-group">
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                    <mat-button-toggle (click)="changeMetricToC()" value="underline">F</mat-button-toggle>
+                    <mat-button-toggle (click)="changeMetricToF()" value="bold">C</mat-button-toggle>
+                </mat-button-toggle-group>
+            </div>
+
+        </div>
+
+
+        <div class="days">
+            <div class="item-day" *ngFor="let day of days">
+                <app-days-details [day]="day"></app-days-details>
+            </div>
+        </div>
+    </div>
+</div>

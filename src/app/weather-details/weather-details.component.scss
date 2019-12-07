@@ -1,0 +1,43 @@
+.weather-details {
+    width: 85%;
+    margin: auto;
+
+    .container {
+        border: 1px solid #CFD8DC;
+
+        .header {
+            padding: 20px;
+            .btn-saveOrDelete {
+                float: right;
+                height: 35px;
+                cursor: pointer;
+                font-size: 14px;
+                border: transparent;
+                letter-spacing: 1.25px;
+                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.39);
+                border-radius: 2.6px;
+                background: transparent;
+            }
+
+            .toggle-group {
+                .mat-button-toggle {
+                    width: 70px;
+                }
+            }
+        }
+    
+        .days {
+            height: 450px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+
+            .item-day {
+                display: inline-block;
+                width: 14%;
+                text-align: center;
+            }
+        }
+    }
+}

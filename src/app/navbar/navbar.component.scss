@@ -1,0 +1,20 @@
+.navbar {
+    .mat-toolbar {
+        color: #787993;
+        font-size: medium;
+        border: 1px solid#CFD8DC;
+        
+        .example-spacer {
+            flex: 1 1 auto;
+          }
+        
+        .component-navigation {
+            span {
+                cursor: pointer;
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+
