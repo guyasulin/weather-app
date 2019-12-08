@@ -13,7 +13,7 @@ export class FavoritesComponent implements OnInit {
   public favorites: WeatherModel[];
 
   constructor(
-    private favoritesService: FavoritesService,
+    public favoritesService: FavoritesService,
     public route: ActivatedRoute, public router:Router
     ) {     }
 

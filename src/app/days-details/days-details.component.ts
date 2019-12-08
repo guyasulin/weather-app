@@ -8,7 +8,7 @@ import { WeatherModel } from '../models/weatherModel';
 })
 export class DaysDetailsComponent implements OnInit {
 
-  @Input() day:WeatherModel[];
+  @Input() day:WeatherModel;
   
   constructor() { }
 

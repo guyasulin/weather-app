@@ -20,7 +20,7 @@ export class WeatherDetailsComponent implements OnInit, OnChanges {
   @Input() cityeName: string;
   @ViewChild('todeyWeather', { static: false }) todeyWeather: TodeyWeatherComponent;
 
-  constructor(private weatherService: WeatherService, private favoritesService: FavoritesService) { }
+  constructor(public weatherService: WeatherService, public favoritesService: FavoritesService) { }
 
   ngOnInit() {
   }

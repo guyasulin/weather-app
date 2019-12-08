@@ -12,7 +12,7 @@ export class WeatherService {
 
   public params: WeatherModel;
 
-  apiKey = 'AATAnnRcn69kCtmAAdZ98eWFjCo57iJ2';
+  apiKey = 'J8PZonyj99Kwid9N5H9dmk3d4OUIGc98';
 
   constructor(private http: HttpClient) { }
 
