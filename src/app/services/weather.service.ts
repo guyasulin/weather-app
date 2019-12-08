@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { map } from "rxjs/operators";
 import { Observable } from 'rxjs';
 import { WeatherModel } from '../models/weatherModel';
@@ -17,19 +17,22 @@ export class WeatherService {
   constructor(private http: HttpClient) { }
 
   searchCity(city: string): Observable<any> {
+    var headers = new HttpHeaders();
     return this.http.get(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${this.apiKey}&q=${city}`)
   }
 
   findMe(latitude: number, longitude: number): Observable<any> {
-    return this.http.get(`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${this.apiKey}&q=${latitude},${longitude}`)
+    var headers = new HttpHeaders();
+    return this.http.get(`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${this.apiKey}&q=${latitude},${longitude}`,{headers:headers})
   }
 
   getWeatherToday(key: WeatherModel[]): Observable<any> {
-    return this.http.get(`http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${this.apiKey}`)
+    var headers = new HttpHeaders();
+    return this.http.get(`http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${this.apiKey}`,{headers:headers})
   }
 
   getFiveDayForecast(key: WeatherModel[], metric: boolean = true): Observable<any> {
-    return this.http.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}?apikey=${this.apiKey}&details=true&metric=${metric}`)
-    // metric=true
+    var headers = new HttpHeaders();
+    return this.http.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}?apikey=${this.apiKey}&details=true&metric=${metric}`,{headers:headers})
   }
 }
