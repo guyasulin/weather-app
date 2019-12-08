@@ -1,0 +1,80 @@
+{
+  "configVersion": 1,
+  "timestamp": 1575844072460,
+  "index": "https://guyasulin.github.io/weather-app/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://guyasulin.github.io/weather-app/favicon.ico",
+        "https://guyasulin.github.io/weather-app/index.html",
+        "https://guyasulin.github.io/weather-app/main-es2015.da6aa256baa732cada14.js",
+        "https://guyasulin.github.io/weather-app/main-es5.da6aa256baa732cada14.js",
+        "https://guyasulin.github.io/weather-app/manifest.webmanifest",
+        "https://guyasulin.github.io/weather-app/polyfills-es2015.2987770fde9daa1d8a2e.js",
+        "https://guyasulin.github.io/weather-app/polyfills-es5.ef4b1e1fc703b3ff76e3.js",
+        "https://guyasulin.github.io/weather-app/runtime-es2015.edb2fcf2778e7bf1d426.js",
+        "https://guyasulin.github.io/weather-app/runtime-es5.edb2fcf2778e7bf1d426.js",
+        "https://guyasulin.github.io/weather-app/styles.47fdb1eb74ab462ab6f4.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://guyasulin.github.io/weather-app/assets/icons/icon-128x128.png",
+        "https://guyasulin.github.io/weather-app/assets/icons/icon-144x144.png",
+        "https://guyasulin.github.io/weather-app/assets/icons/icon-152x152.png",
+        "https://guyasulin.github.io/weather-app/assets/icons/icon-192x192.png",
+        "https://guyasulin.github.io/weather-app/assets/icons/icon-384x384.png",
+        "https://guyasulin.github.io/weather-app/assets/icons/icon-512x512.png",
+        "https://guyasulin.github.io/weather-app/assets/icons/icon-72x72.png",
+        "https://guyasulin.github.io/weather-app/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://guyasulin.github.io/weather-app/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://guyasulin.github.io/weather-app/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://guyasulin.github.io/weather-app/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://guyasulin.github.io/weather-app/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://guyasulin.github.io/weather-app/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://guyasulin.github.io/weather-app/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://guyasulin.github.io/weather-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://guyasulin.github.io/weather-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://guyasulin.github.io/weather-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://guyasulin.github.io/weather-app/index.html": "c8bad462adc8eaf0b67a81f48b06dd81b34e1429",
+    "https://guyasulin.github.io/weather-app/main-es2015.da6aa256baa732cada14.js": "147d7a8a4e25a7a74e6a3bd672f34681295096cf",
+    "https://guyasulin.github.io/weather-app/main-es5.da6aa256baa732cada14.js": "4768c299f086ef9c052db8700ce74b11fbd7396a",
+    "https://guyasulin.github.io/weather-app/manifest.webmanifest": "8c58a079a6dd7ad831b1b4c3e2d23760b8c3ac16",
+    "https://guyasulin.github.io/weather-app/polyfills-es2015.2987770fde9daa1d8a2e.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
+    "https://guyasulin.github.io/weather-app/polyfills-es5.ef4b1e1fc703b3ff76e3.js": "9ceb13edd4b10268f661814868dadb2b284f9745",
+    "https://guyasulin.github.io/weather-app/runtime-es2015.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://guyasulin.github.io/weather-app/runtime-es5.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://guyasulin.github.io/weather-app/styles.47fdb1eb74ab462ab6f4.css": "09766ca9773d5e1a2f4dea3dc609a45753a36583"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
