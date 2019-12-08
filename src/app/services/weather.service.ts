@@ -17,22 +17,18 @@ export class WeatherService {
   constructor(private http: HttpClient) { }
 
   searchCity(city: string): Observable<any> {
-    var headers = new HttpHeaders();
     return this.http.get(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${this.apiKey}&q=${city}`)
   }
 
   findMe(latitude: number, longitude: number): Observable<any> {
-    var headers = new HttpHeaders();
-    return this.http.get(`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${this.apiKey}&q=${latitude},${longitude}`,{headers:headers})
+    return this.http.get(`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${this.apiKey}&q=${latitude},${longitude}`)
   }
 
   getWeatherToday(key: WeatherModel[]): Observable<any> {
-    var headers = new HttpHeaders();
-    return this.http.get(`http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${this.apiKey}`,{headers:headers})
+    return this.http.get(`http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${this.apiKey}`)
   }
 
   getFiveDayForecast(key: WeatherModel[], metric: boolean = true): Observable<any> {
-    var headers = new HttpHeaders();
-    return this.http.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}?apikey=${this.apiKey}&details=true&metric=${metric}`,{headers:headers})
+    return this.http.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}?apikey=${this.apiKey}&details=true&metric=${metric}`)
   }
 }
